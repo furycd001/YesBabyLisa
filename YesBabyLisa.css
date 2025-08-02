@@ -1,0 +1,104 @@
+@font-face {
+    font-family: 'Caught';
+    src: local('Caught'), local('CaughtRegular'),
+        url('fonts/CaughtRegular.woff2') format('woff2'),
+        url('fonts/CaughtRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bubble Bobble';
+    src: local('Bubble Bobble'), local('BubbleBobble'),
+        url('fonts/BubbleBobble.woff2') format('woff2'),
+        url('fonts/BubbleBobble.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Cherry Bomb One';
+    src: local('Cherry Bomb One Regular'), local('CherryBombOne-Regular'),
+        url('fonts/CherryBombOne-Regular.woff2') format('woff2'),
+        url('fonts/CherryBombOne-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #E5B680;
+  font-family: "Caught", "Bubble Bobble", "Cherry Bomb One";
+  font-size: 1.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.hero-image {
+  max-width: 80vw;
+  height: auto;
+  border-radius: 22px;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(9, auto);
+  gap: 20px 28px;
+  justify-content: center;
+}
+
+.link-grid a {
+  color: #E54865;
+  text-decoration: none;
+  padding: 10px 10px;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+}
+
+.link-grid a:hover {
+  color: #E5B680;
+  text-decoration: none;
+  border-radius: 4px;
+  background-color: rgba(229, 72, 101, 0.8);
+  transition: background 0.3s ease;
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.link-grid .clock {
+  padding: 10px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #E54865;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.link-grid .clock:hover {
+  color: #E5B680;
+  background-color: rgba(229, 72, 101, 0.8);
+  text-shadow: 0 0 1px rgba(0, 0, 0, 0.3);
+}
+
+.link-grid .lisa {
+  color: #E54865;
+  padding: 10px 10px;
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  pointer-events: none;
+}
