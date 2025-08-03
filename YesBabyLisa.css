@@ -102,3 +102,58 @@ body {
   background-color: transparent;
   pointer-events: none;
 }
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 1.1em;
+    padding: 20px 10px;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+  }
+
+  .hero-image {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    border-radius: 16px;
+  }
+
+  .link-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    align-items: stretch;
+  }
+
+  .link-grid .clock,
+  .link-grid .lisa,
+  .link-grid a {
+    font-size: 1em;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .link-grid .lisa {
+    justify-content: center;
+    pointer-events: none;
+  }
+
+  .container {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 1em;
+  }
+
+  .link-grid .clock,
+  .link-grid .lisa,
+  .link-grid a {
+    font-size: 0.95em;
+  }
+}
