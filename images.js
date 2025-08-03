@@ -1946,7 +1946,7 @@ const images = [
   'images/YesBabyLisa1943.webp',
   'images/YesBabyLisa1944.webp',
   'images/YesBabyLisa1945.webp',
-  'images/YesBabyLisa1946.webp'
-  'images/YesBabyLisa1947.webp'
-  'images/YesBabyLisa1948.webp'
+  'images/YesBabyLisa1946.webp',
+  'images/YesBabyLisa1947.webp',
+  'images/YesBabyLisa1948.webp',
 ];
